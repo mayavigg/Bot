@@ -7,6 +7,7 @@ api_id = 13503794
 api_hash = "7c5edb66000bcb12d914019f87bffed4"
 bot_token = "5600997688:AAG_8tBfLx4XOXorGSaXBNt521NKMI2l_nI"
 
+
 admin = [5329205911,5559099357]
 
 bot = Client(
@@ -49,8 +50,13 @@ async def del_filt(bot,msg):
 @bot.on_message( filters.web_page)
 async def service_msg(bot,msg):
      await asyncio.sleep(1)
-     await bot.delete_messages(msg.chat.id,msg.id) 
+     await bot.delete_messages(msg.chat.id,msg.id)
     
+    
+
+
+     
+               
 
 
 print("bot started")
