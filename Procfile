@@ -1,1 +1,1 @@
-worker: python3 delmsg.py
+worker: python3 main.py
