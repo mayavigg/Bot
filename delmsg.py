@@ -24,9 +24,8 @@ bot = Client(
 @bot.on_message(filters.text)
 async def start(bot,msg):
     await asyncio.sleep(1)
-    #await bot.delete_messages(msg.chat.id,msg.id)
-    if msg.from_user.is_bot :
-        await bot.delete_messages(msg.chat.id,msg.id)
+    await bot.delete_messages(msg.chat.id,msg.id)
+
 
 
 
