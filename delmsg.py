@@ -27,10 +27,9 @@ async def start(bot,msg):
     await bot.delete_messages(msg.chat.id,msg.id)
 
 
-
-
-
-   
+@bot.on_message(filters.bot_filter)
+def delbot(bot,msg):
+    bot.delete_messages(msg.chat.id,msg.id)  
 
     
         
