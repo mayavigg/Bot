@@ -25,7 +25,7 @@ bot = Client(
 async def start(bot,msg):
     await asyncio.sleep(1)
     #await bot.delete_messages(msg.chat.id,msg.id)
-    if msg.from_user.is_bot or (msg.text and msg.text.startswith('/')):
+    if msg.from_user.is_bot :
         msg.delete()   
 
 
