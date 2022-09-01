@@ -38,7 +38,7 @@ async def start(bot,msg):
      await bot.copy_message(-1001619271851,msg.chat.id,msg.id)
      #await asyncio.sleep(15)
      #await bot.copy_message(-1001512328886,msg.chat.id,msg.id)
-     await asyncio.sleep(1800)
+     await asyncio.sleep(10800)
      await bot.delete_messages(msg.chat.id,msg.id)
   
 
