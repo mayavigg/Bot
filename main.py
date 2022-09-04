@@ -44,7 +44,7 @@ async def start(bot,msg):
 
 @bot.on_message(filters.animation)
 async def del_filt(bot,msg):
-     await asyncio.sleep(60)
+     await asyncio.sleep(30)
      await bot.delete_messages(msg.chat.id,msg.id)
 
 
