@@ -20,7 +20,7 @@ bot = Client(
 )
 
 
-role=[]
+role=[5559099357]
 
 @bot.on_message(filters.text)
 def start(bot,msg):
