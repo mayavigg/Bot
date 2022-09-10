@@ -20,12 +20,15 @@ bot = Client(
 )
 
 
+role=[]
 
 @bot.on_message(filters.text)
 def start(bot,msg):
-    bot.delete_messages(msg.chat.id,msg.id,True)
-    print("msg deleted")    
-
+    if msg.from_user.id in role :
+        None
+    else : 
+        bot.delete_messages(msg.chat.id,msg.id,True)
+        print("msg deleted")    
 
 
         
