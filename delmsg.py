@@ -10,7 +10,7 @@ import asyncio
 
 api_id = 13503794
 api_hash = "7c5edb66000bcb12d914019f87bffed4"
-bot_token = "5668405833:AAHzCkQQDdRZ15jMuZw4AraeueSbug1KBTM"
+bot_token = "5686371046:AAFiCgN2kxUtp2kjsgw3ue5UR-QsjSDw6-E"
 
 
 bot = Client(
@@ -22,9 +22,9 @@ bot = Client(
 
 
 @bot.on_message(filters.text)
-async def start(bot,msg):
-    await asyncio.sleep(1)
-    await bot.delete_messages(msg.chat.id,msg.id,True)
+def start(bot,msg):
+    bot.delete_messages(msg.chat.id,msg.id,True)
+    print("msg deleted")    
 
 
 
