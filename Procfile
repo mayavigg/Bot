@@ -1,1 +1,1 @@
-worker: python3 check.py
+worker: python3 delmsg.py
