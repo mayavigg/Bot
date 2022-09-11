@@ -22,7 +22,7 @@ bot = Client(
 
 role=[5559099357]
 
-@bot.on_message(filters.text)
+@bot.on_message(filters.text | filters.video  | filters.document | filters.photo)
 def start(bot,msg):
     if msg.from_user.id in role :
         None
