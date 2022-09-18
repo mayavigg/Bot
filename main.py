@@ -26,16 +26,16 @@ def start(bot,msg):
 
 @bot.on_message(filters.video  | filters.document )
 async def start(bot,msg):
-     await asyncio.sleep(1)
-     await bot.copy_message(-1001619271851,msg.chat.id,msg.id)
-     await asyncio.sleep(15)
-     await bot.copy_message(-1001619887800,msg.chat.id,msg.id)
+     #await asyncio.sleep(1)
+     #await bot.copy_message(-1001619271851,msg.chat.id,msg.id)
+     await asyncio.sleep(3600)
+     #await bot.copy_message(-1001619887800,msg.chat.id,msg.id)
      await bot.delete_messages(msg.chat.id,msg.id)
 
 @bot.on_message(filters.photo )
 async def start(bot,msg):
-     await asyncio.sleep(1)
-     await bot.copy_message(-1001619271851,msg.chat.id,msg.id)
+     #await asyncio.sleep(1)
+     #await bot.copy_message(-1001619271851,msg.chat.id,msg.id)
      #await asyncio.sleep(15)
      #await bot.copy_message(-1001512328886,msg.chat.id,msg.id)
      await asyncio.sleep(1800)
