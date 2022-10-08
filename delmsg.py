@@ -7,28 +7,24 @@ import asyncio
 
 
 
+api_id = 17222725
+api_hash = "d4c911d4a89f361a0254477927b250bf"
+bot_token = "5764329195:AAH3gmmr36lkWVcvKHP9buypTYsemrohIcE"
 
-api_id = 13503794
-api_hash = "7c5edb66000bcb12d914019f87bffed4"
-bot_token = "5686371046:AAFiCgN2kxUtp2kjsgw3ue5UR-QsjSDw6-E"
-
-
-bot = Client(
-    "my_bot",
-    api_id=api_id, api_hash=api_hash,
-    bot_token=bot_token
-)
+bot = Client("my_account", api_id=api_id, api_hash=api_hash,bot_token=bot_token)
 
 
-role=[5559099357]
 
+
+    
+    
+    
 @bot.on_message(filters.text | filters.video  | filters.document | filters.photo)
-def start(bot,msg):
-    if msg.from_user.id in role :
-        None
-    else : 
-        bot.delete_messages(msg.chat.id,msg.id,True)
-        print("msg deleted")    
+async def start(bot,msg):
+    if msg.chat.id == -1001808142344 : 
+        await asyncio.sleep(1800)
+        await bot.delete_messages(msg.chat.id,msg.id,True)
+        print("msg deleted") 
 
 
         
